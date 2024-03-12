@@ -1,0 +1,20 @@
+<%- include("./header.ejs") %>
+<nav>
+  <a href="/" class="home-link">Home</a>
+  
+  <% if(user){ %>
+    <a href="/message">Create a message</a>
+    <% if(!user.isMember){ %>
+      <a href="/member">Become a member!</a>
+    <% } %>
+    <div class="logout">
+        <form action="/logout?_method=DELETE" method="POST">
+          <button type="submit">LOGOUT</button>
+        </form>
+    </div>
+    <% }else{ %>
+  <a href="/login">Login</a>
+  <a href="/register">Register</a>
+  <% } %>
+
+</nav>

@@ -1,0 +1,21 @@
+<%- include("nav.ejs") %>
+<div class="member-container">
+  <div class="details">
+    <h1>Become a member now!</h1>
+    <p>The answer is in this riddle (Hint: it has 4 characters)</p>
+    <p>
+      The most arrogant animal in the world is 4 a pawed animal. They also like
+      to miau!
+    </p>
+  </div>
+
+  <div class="riddle-container">
+    <form action="/member" method="POST">
+      <label for="member">Enter the answer!</label>
+      <input type="text" name="member" id="member" />
+      <button type="submit">Submit</button>
+    </form>
+
+    <a href="/" class="back-link">Back</a>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+<%- include("nav.ejs") %>
+
+<div class="index-container">
+    <div class="info">
+    
+        <h1>Salutare: <% if(user){%><%= user.fullName %> <% } %></h1>
+        <%if(!user.isMember){ %>
+        <h2>Become a member to see the date and the name of authors of the messages!</h2>
+        <% } %>
+    </div>
+    
+    <div class="message-container">
+        <% if(messageList.length){ %>
+            <% messageList.forEach(item => { %>
+                <div class="message">
+                        <p class="message-title"><%= item.title %></p>
+                        <p class="message-content"><%= item.message %></p>
+                    <%if(user.isMember){ %>
+                        <p class="message-author">Name: <%= item.author.fullName %></p>
+                        <p class="message-date"><%= item.added %></p>
+                    <% }else { %>
+                        <p class="message-author">author</p>
+                        <p class="message-date">added date</p>
+                        <% } %>
+                </div>
+    
+            <% }); %>
+        <% }else{ %>
+            <h1>There are no messages to show!</h1>
+            <% } %>
+    
+    
+    </div>
+</div>

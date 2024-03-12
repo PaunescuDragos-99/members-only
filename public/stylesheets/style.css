@@ -1,0 +1,230 @@
+body {
+  font-family: Arial, sans-serif; /* Use Arial font */
+  background-color: #f8f9fa; /* Light background color */
+  color: #343a40; /* Dark text color */
+}
+
+nav {
+  background-color: #343a40; /* Dark background color */
+  padding: 10px 20px; /* Padding around the navigation links */
+  display: flex; /* Use flexbox layout */
+  justify-content: space-between; /* Distribute items along the main axis */
+  align-items: center; /* Center items vertically */
+}
+
+nav a {
+  color: #f8f9fa; /* Light text color */
+  text-decoration: none; /* Remove underline from links */
+  padding: 8px 12px; /* Padding around each link */
+  border-radius: 4px; /* Rounded corners for links */
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease; /* Smooth transition for background and text color change */
+}
+
+nav a:hover {
+  background-color: #6c757d; /* Darker background color on hover */
+  color: #f8f9fa; /* Lighter text color on hover */
+}
+
+nav .home-link {
+  margin-right: auto; /* Push the Home link to the left by auto margin */
+}
+
+.logout {
+  display: flex; /* Use flexbox layout for logout container */
+  justify-content: center;
+  align-items: center; /* Center items vertically */
+}
+
+nav .logout form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .logout button {
+  background-color: #0f6fdd; /* Red background color for logout button */
+  color: #f8f9fa; /* Light text color for logout button */
+  border: none; /* Remove border */
+  margin-top: 20px;
+  padding: 8px 12px; /* Padding */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Cursor style */
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease; /* Smooth transition */
+}
+
+nav .logout button:hover {
+  background-color: #797576; /* Darker background color on hover */
+}
+
+.index-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.info {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.info h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.info h2 {
+  font-size: 18px;
+  color: #666;
+}
+
+.message-container {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.message {
+  border: solid 4px;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.message-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.message-content {
+  margin-top: 5px;
+  color: #333;
+}
+
+.message-author,
+.message-date {
+  color: #666;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.login-container h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.error-message {
+  color: #ff0000;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #b8b5b5;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.create-message-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.create-message-container h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.message-form {
+  margin-bottom: 20px;
+}
+
+.back-link {
+  display: block;
+  text-align: center;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.details h1 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.details p {
+  margin-bottom: 15px;
+}
+
+.member-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.details,
+.riddle-container {
+  max-width: 400px;
+  min-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
